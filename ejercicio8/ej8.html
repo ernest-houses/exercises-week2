@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Ejercicio 8 - Votaciones en gráfico</title>
+
+    <link
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+   
+  </head>
+
+  <body>
+    <div class="container text-center">
+      <h1>Votaciones</h1>
+      <div class="container">
+        <button type="button" onclick="vote(0)">Socialistas</button>
+        <button type="button" onclick="vote(1)">Liberales</button>
+        <button type="button" onclick="vote(2)">Animalistas</button>
+        <button type="button" onclick="vote(3)">Centristas</button>
+        <button type="button" onclick="vote(4)">Ecologistas</button>
+        <button type="button" onclick="resetVotes()">Resetear</button>
+      </div>
+      <canvas id="voteChart" width="400" height="400"></canvas>
+    </div>
+
+    <br /><br />
+    <a href="../ejercicio10/index.html" class="btn btn-primary mt-4">Volver</a>
+    <script src="votaciones.js"></script>
+  </body>
+</html>
